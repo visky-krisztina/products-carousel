@@ -1,0 +1,284 @@
+.swiper-container {
+	width: 100%;
+}
+
+.slider-main-container {
+	position: relative;
+	width: 90vw;
+	max-width: 1200px;
+	margin: auto;
+	height: auto;
+}
+
+.swiper-pagination {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	z-index: 10;
+	margin-top: 1rem !important;
+}
+
+.slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide-content {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.card {
+	width: 48%;
+	height: 20rem;
+	display: flex;
+	flex-direction: row;
+	border: 2px solid var(--clr-grey-3);
+	border-radius: 5px;
+	background: var(--clr-white);
+	margin: 10px;
+}
+
+.card:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-container {
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+.card-content {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.swiper-slide {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	width: 90%;
+	object-fit: cover;
+}
+
+.nav-btn {
+	display: block;
+	position: absolute;
+	z-index: 20;
+	user-select: none;
+	background-color: rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	padding: 2px;
+	border-radius: 5px;
+	transition: background 0.5s ease;
+}
+
+.nav-btn:hover {
+	background-color: rgb(255, 165, 0);
+}
+
+.nav-btn.custom-prev-button {
+	top: 50%;
+	left: 2em;
+	transform: translateY(-50%);
+}
+
+.nav-btn.custom-next-button {
+	top: 50%;
+	right: 2em;
+	transform: translateY(-50%);
+}
+
+.icon-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	padding-top: 0.5rem;
+	height: 3rem;
+}
+
+.product-info {
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+.card-icon {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	padding-right: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.icon {
+	background-color: transparent;
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0.3rem;
+	margin-right: 0.3rem;
+}
+
+.line {
+	margin: 0.5rem 0;
+	border: 1px solid var(--clr-grey-3);
+}
+.product-title {
+	text-wrap: wrap;
+	font-size: 1.3rem;
+	text-align: left;
+}
+.product-price {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.5rem;
+}
+.next-to-each-other {
+	display: flex;
+	flex-direction: row;
+}
+#original-price {
+	font-size: 0.9rem;
+	font-weight: 600;
+	text-decoration: line-through;
+	text-decoration-color: #ff3a68;
+	margin-left: 0.2rem;
+}
+
+#discounted-price {
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: #ff3a68;
+	margin-left: 0.4rem;
+}
+
+#delivery {
+	text-align: right;
+	margin-left: 3rem;
+}
+#euro-icon {
+	margin-top: 0.2rem;
+}
+#reduced-euro-icon {
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: #ff3a68;
+	margin-top: 0.4rem;
+}
+
+.add-cart {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 15rem;
+	margin: 0 auto;
+	height: 3rem;
+	background-color: black;
+	color: white;
+	border-radius: 0.2rem;
+	border: transparent;
+	font-size: 1.3rem;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	letter-spacing: 1px;
+}
+#cart-text {
+	margin-left: 0.4rem;
+}
+
+.subtitle {
+	font-style: italic;
+}
+
+@media (max-width: 720px) {
+	.slider-main-container {
+		width: 90vw;
+		max-width: 80vw;
+		margin: auto;
+	}
+
+	.card {
+		width: 100% !important;
+		height: 90%;
+		margin: 0;
+	}
+
+	.img-container {
+		width: 30%;
+	}
+
+	.img-container img {
+		width: 100%;
+	}
+
+	.card-content {
+		width: 60%;
+	}
+
+	.icon-container {
+		padding-top: 0.2rem;
+		height: 2rem;
+	}
+
+	.product-info {
+		padding-top: 0.7rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: left;
+		height: 100%;
+	}
+	.card-icon {
+		padding-right: 0.3rem;
+		margin-bottom: 0.3rem;
+	}
+
+	.icon {
+		width: 1.8rem;
+		height: 1.8rem;
+	}
+	.product-title {
+		font-size: 1rem;
+	}
+
+	#delivery {
+		text-align: right;
+		font-size: 0.7rem;
+		margin-right: 0;
+		margin-bottom: 0;
+		margin-top: -1.5rem;
+	}
+
+	.add-cart {
+		width: 6rem;
+		margin: 0 auto;
+		height: 1.7rem;
+		font-size: 0.7rem;
+	}
+	#discounted-price {
+		font-size: 1.3rem;
+		font-weight: 600;
+		color: #ff3a68;
+		margin-left: 0;
+	}
+	.subtitle {
+		font-size: 0.5rem;
+	}
+	#reduced-euro-icon {
+		font-size: 1.5rem;
+		margin-top: 0.2rem;
+	}
+}
